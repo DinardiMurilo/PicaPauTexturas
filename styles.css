@@ -1,0 +1,208 @@
+/* CSS atualizado com o ajuste no tamanho do texto do endereço */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(45deg, #ff8c00, #ffdd57);
+    padding: 10px 0;
+}
+
+.logo {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 70px;
+    font-size: 1.25rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d49c58;
+    margin-bottom: 20px;
+}
+
+.product-banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.banner {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 100%;
+}
+
+.welcome-box, .endereco-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.endereco-box .endereco-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.product {
+    display: flex;
+    align-items: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    flex: 1;
+}
+
+.product img {
+    max-width: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.875rem;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .welcome-box, .endereco-box {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .endereco-box .endereco-text {
+        font-size: 1.5rem;
+    }
+
+    .product-banners {
+        flex-direction: column;
+    }
+
+    .product-row {
+        flex-direction: column;
+    }
+}
